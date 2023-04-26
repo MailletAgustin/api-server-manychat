@@ -1,4 +1,4 @@
-function generateResponse(req, res, next) {
+function generateResponse(req, res) {
     console.log('Se recibió unas solicitud de MANYCHAT');
 
     let data = req.body;

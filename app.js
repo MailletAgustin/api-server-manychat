@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 
 const instagram = require('./routes/instagram');
 
-app.post('/api/instagram', (req, res) => { instagram.generateResponse(req, res, next) });
+app.post('/api/instagram', (req, res) => { instagram.generateResponse(req, res) });
 
 if (APPMODE === 'dev') {
     http.createServer(app).listen(80, () => {
